@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoRate</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <style></style>
+  <body>
+    <div class="container mt-3">
+      <h1>Cryptocurrency Converter</h1>
+      <p id="result"></p>
+      <form action="#">
+        <div class="divamount">
+          <label for="">Amount: </label>
+          <input type="number" id="amount" value="1" class="form-control" />
+        </div>
+        <div class="selectFromTo">
+          <div class="selectfrom">
+            <label for="cryptocurrency">From: </label>
+            <input
+              class="form-control"
+              name="from"
+              id="from"
+              type="text"
+              onkeyup="this.value = this.value.toUpperCase()"
+            />
+          </div>
+          <div class="selectto">
+            <label for="currency">To: </label>
+            <input
+              class="form-control"
+              name="to"
+              id="to"
+              type="text"
+              onkeyup="this.value = this.value.toUpperCase()"
+            />
+          </div>
+        </div>
+        <div class="divresult">
+          <label for="">Result: </label>
+          <input
+            type="text"
+            id="resultexchange"
+            value=""
+            disabled
+            class="form-control"
+          />
+        </div>
+        <button id="button" class="btn btn-primary mt-3">Convert</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

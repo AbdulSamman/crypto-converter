@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./image/krypto2.jpg");
+  background-size: cover;
+  color: wheat;
+}
+h1 {
+  font-size: 4rem;
+}
+#result {
+  height: 60px;
+  font-size: 3rem;
+}
+button,
+div {
+  width: 50%;
+}
+.selectfrom,
+.selectto,
+.divamount,
+.divresult {
+  display: flex;
+  flex-direction: column;
+}
+.selectFromTo {
+  display: flex;
+  column-gap: 1rem;
+}
+
+@media (max-width: 991px) {
+  h1 {
+    text-align: center;
+    font-size: 2.4rem;
+  }
+  button,
+  div {
+    width: 100%;
+  }
+  #result {
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    height: 150px;
+  }
+}
